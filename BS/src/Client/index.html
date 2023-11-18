@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h4>通讯录</h4>
+        <form action="http://localhost:8000/add" method="get" target="_blank">
+            姓名: <input type="text" name="name"><br>
+            地址: <input type="text" name="address"><br>
+            电话: <input type="text" name="phoneNumber"><br>
+            <input type="submit" value="添加联系人">
+        </form>
+        <hr>
+        <form action="http://localhost:8000/delete" method="get" target="_blank">
+            姓名: <input type="text" name="name"><br>
+            <input type="submit" value="删除联系人">
+        </form>
+        <hr>
+        <form action="http://localhost:8000/show" method="get" target="_blank">
+            <input type="submit" value="查询联系人">
+        </form>
+        <hr>
+        <form action="http://localhost:8000/edit" method="get" target="_blank">
+            编辑联系人姓名: <input type="text" name="name1"><br>
+            编辑后信息：<br>
+            姓名: <input type="text" name="name2"><br>
+            地址: <input type="text" name="address"><br>
+            电话: <input type="text" name="phoneNumber"><br>
+            <input type="submit" value="编辑联系人">
+        </form>
+    </div>
+</body>
+
+</html>
